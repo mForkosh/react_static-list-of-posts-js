@@ -9,8 +9,7 @@ export const PostInfo = ({ post }) => (
 
       <p>
         {' Posted by  '}
-
-        <UserInfo user={post.author} />
+        <UserInfo user={post.user} />
       </p>
     </div>
 

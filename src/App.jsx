@@ -16,7 +16,7 @@ const findComments = id => {
 const posts = postsFromServer.map(post => {
   return {
     ...post,
-    author: findAuthor(post.userId),
+    user: findAuthor(post.userId),
     comments: findComments(post.id),
   };
 });
